@@ -1,0 +1,71 @@
+Objective:
+Create a web application using your best-trained ML model, make predictions from it, and pass the prediction result to a chatbot that uses Gemini API for further querying. Also, create a poster summarizing your project.
+
+Steps to Complete:
+1. Choose Your Best Model
+Evaluate your models and select the one with the highest accuracy.
+
+Save it using joblib or pickle.
+
+2. Build the Web App
+You can use one of the following:
+
+Streamlit (easiest for ML apps)
+
+Flask (more flexible but more code)
+
+HTML/CSS with Flask backend
+
+The app should:
+
+Take input from the user.
+
+Use the trained model to make predictions.
+Show the result on the screen.
+
+3. Integrate Gemini API
+After showing the prediction, send it as a query to the Gemini chatbot via their API.
+
+Display the response from the Gemini API under the prediction.
+
+The Gemini API documentation link should have:
+
+How to get a free API key.
+
+Sample code to use Gemini for query completion.
+
+If you need help understanding the API documentation, share the link here.
+
+4. Make a Poster
+Include in the poster:
+
+Project title
+
+Dataset used
+
+Model accuracy
+
+Web app screenshots
+
+How Gemini API was integrated
+
+Output examples
+
+Optional Tech Stack Suggestion:
+Model: Trained in Python (e.g., scikit-learn)
+
+Web App: Streamlit (fast deployment) or Flask
+
+API Call: requests or httpx in Python to connect to Gemini
+
+Poster: Canva / PowerPoint / Figma
+
+If you want, I can help you:
+
+Set up a Streamlit/Flask template
+
+Generate code to call Gemini API
+
+Make a poster draft
+
+https://youtu.be/ywPDnh4T2TA?si=VzgEWOA7W0xZq9vy
