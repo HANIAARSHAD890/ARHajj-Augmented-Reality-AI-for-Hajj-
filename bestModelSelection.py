@@ -9,6 +9,10 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 import joblib
+
+
+
+
 df = pd.read_csv("encoded_dataset.csv")
 
 # Select one-hot encoded health condition columns
@@ -19,7 +23,7 @@ health_cols = [
     "Health_Condition_Injured",
     "Health_Condition_Normal"
 ]
-
+print(df[health_cols])
 df["Health_Condition"] = df[health_cols].idxmax(axis=1).str.replace("Health_Condition_", "")
 # 1. Load your dataset (replace with your actual file path)
 df.drop(columns=health_cols, inplace=True)
@@ -76,8 +80,8 @@ print("Best model based on F1 score:\n", best_model)
 # Get the trained Decision Tree model from your models dictionary
 decision_tree_model = models["Decision Tree"]
 
-# # Save the trained Decision Tree model
-# joblib.dump(decision_tree_model, "decision_tree_model.pkl")
+# Save the trained Decision Tree model
+joblib.dump(decision_tree_model, "decision_tree_model.pkl")
 
 # print("Decision Tree model saved successfully as 'decision_tree_model.pkl'")
 ############################################################################DECISION TREE BEST MODEL#######################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@############

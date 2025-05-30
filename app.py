@@ -6,7 +6,7 @@ import gemini_integration as gemini
 # Load trained model
 model = joblib.load("decision_tree_model.pkl")
 
-st.title("🕋 Haji Health Predictor")
+st.title("🕋 Pilgrim Health Predictor")
 
 # Define input options
 activity_types = ["Prayer", "Resting", "Sa’i", "Tawaf", "Walking"]
